@@ -56,8 +56,3 @@ Gained a clear understanding of how SQL injection attacks are carried out and th
 
 ---
 
-### 💻 Want to Learn More?
-
-- [TryHackMe](https://tryhackme.com/)
-- [GitHub](https://github.com/davidhnna)
-- [LinkedIn](https://linkedin.com/in/david-hanna-a73756304/)
