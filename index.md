@@ -1,123 +1,63 @@
 ---
 layout: default
+title: Projects
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# Cybersecurity Projects
 
-[Link to another page](./another-page.html).
+Explore hands-on cybersecurity projects demonstrating real-world exploitation and defense techniques.
 
-There should be whitespace between paragraphs.
+---
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## 🔓 Metasploit SMB Compromise
 
-# Header 1
+> **Platforms and Tools**: TryHackMe, Metasploit, John the Ripper
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+**Objective**  
+Simulated an attack on a vulnerable SMB service using Metasploit to gain unauthorized access and escalate privileges.
 
-## Header 2
+**Key Steps**  
+1. Exploited SMB vulnerability using `ms08_067_netapi` module.
+2. Gained remote shell with Meterpreter.
+3. Performed privilege escalation and extracted SAM database.
+4. Used `hashdump` and cracked hashes with rainbow tables.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```bash
+use exploit/windows/smb/ms08_067_netapi
+set RHOST <target-ip>
+exploit
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+**Outcome**  
+Successfully compromised a machine, extracted credentials, and simulated post-exploitation steps.
+
+---
+
+## 🩻 SQL Injection with SQLMap
+
+> **Platforms and Tools**: TryHackMe, SQLMap, Burp Suite, Linux Terminal
+
+**Objective**  
+Performed automated SQL injection on a vulnerable web application to extract sensitive data.
+
+**Key Steps**  
+1. Identified vulnerable endpoints using browser dev tools and Burp Suite.
+2. Ran SQLMap with custom flags to enumerate databases.
+3. Extracted user tables and dumped credentials.
+4. Learned common SQLi vectors and how to mitigate them.
+
+```bash
+sqlmap -u "http://vulnerable.site/page.php?id=1" --dbs
+sqlmap -u "http://vulnerable.site/page.php?id=1" -D users -T creds --dump
 ```
 
-#### Header 4
+**Outcome**  
+Gained a clear understanding of how SQL injection attacks are carried out and the importance of input sanitization.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+---
 
-##### Header 5
+### 💻 Want to Learn More?
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+- [TryHackMe](https://tryhackme.com/)
+- [GitHub](https://github.com/davidhnna)
+- [LinkedIn](https://linkedin.com/in/david-hanna-a73756304/)
