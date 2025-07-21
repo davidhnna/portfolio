@@ -68,5 +68,4 @@ In this project, I explored how SQL injection vulnerabilities can be detected an
 ## 📢 Let's Connect
 - [GitHub](https://github.com/davidhnna)
 - [LinkedIn](https://linkedin.com/in/david-hanna-a73756304/)
-- [TryHackMe](https://tryhackme.com/)
 
