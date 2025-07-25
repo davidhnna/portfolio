@@ -9,6 +9,13 @@ Welcome to my hands-on cybersecurity portfolio. These projects demonstrate real-
 
 ---
 
+## 📂 Projects Index
+
+- [🔓 Windows Eternal Blue Compromise](#-windows-eternal-blue-compromise)
+- [🩻 SQL Injection with SQLMap](#-sql-injection-with-sqlmap)
+
+--- 
+
 ## 🔓 Windows Eternal Blue Compromise
 
 > **Tools Used**: TryHackMe, Metasploit, John the Ripper, Windows, Rainbow Tables
