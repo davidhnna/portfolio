@@ -9,12 +9,12 @@ Welcome to my hands-on cybersecurity portfolio. These projects demonstrate real-
 
 ---
 
-## 🔓 Metasploit SMB Compromise
+## 🔓 Windows Eternal Blue Compromise
 
 > **Tools Used**: TryHackMe, Metasploit, John the Ripper, Windows, Rainbow Tables
 
 ### 🧠 Overview
-This project was part of a TryHackMe challenge that focused on exploiting vulnerable SMB services. My goal was to simulate a real attack: gain access, escalate privileges, and extract credentials from a Windows system.
+This project was part of a TryHackMe challenge that focused on exploiting a Windows machines MS17-010 SMB vulnrablitity. My goal was to simulate a real attack: gain access, escalate privileges, and extract credentials from a Windows system.
 
 ### ⚙️ What I Did
 1. **Scanned the target** using `nmap` to identify open ports and services.
