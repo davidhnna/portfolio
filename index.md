@@ -93,7 +93,7 @@ The Eviction Room on TryHackMe simulates how a SOC analyst can detect, map, and 
 
 ### 🖼️ Screenshots
 ![MITRE ATT&CK Mapping](assets/images/eviction-attack-navigator.png)  
-![Eviction Badge](assets/images/eviction-badge.png)  
+![Persistence Registry Keys](assets/images/eviction-badge.png)  
 
 ### ✅ What I Learned
 - How to use the **MITRE ATT&CK framework** to track adversary behavior.  
