@@ -13,6 +13,7 @@ Welcome to my hands-on cybersecurity portfolio. These projects demonstrate real-
 
 - [🔓 Windows Eternal Blue Compromise](#-windows-eternal-blue-compromise)
 - [🩻 SQL Injection with SQLMap](#-sql-injection-with-sqlmap)
+- [🚪 Eviction Room: SOC Level 1 - Cyber Defence](#-eviction-room-soc-level-1---cyber-defence)
 
 --- 
 
@@ -72,6 +73,35 @@ In this project, I explored how SQL injection vulnerabilities can be detected an
 
 ---
 
+## 🚪 Eviction Room: SOC Level 1 - Cyber Defence
+
+> **Tools Used**: TryHackMe, MITRE ATT&CK Navigator, Windows Command Shell, PowerShell
+
+### 🧠 Overview
+The Eviction Room on TryHackMe simulates how a SOC analyst can detect, map, and defend against adversarial techniques used by **APT28**. Using the **MITRE ATT&CK framework**, I tracked persistence, execution, and evasion tactics while simulating an active defense scenario.
+
+### ⚙️ What I Did
+1. **Mapped APT28 behaviors** using the MITRE ATT&CK Navigator to understand TTPs.  
+2. Identified **initial access techniques** such as spearphishing attachments and malicious links.  
+3. Detected execution attempts via **PowerShell** and **Windows Command Shell**.  
+4. Tracked persistence through **Registry Run Keys** and analyzed defense evasion using `rundll32.exe`.  
+5. Investigated discovery via **network sniffing** tools like `tcpdump`.  
+6. Observed lateral movement through **SMB/Windows Admin Shares**.  
+7. Determined the adversary’s objective of **intellectual property theft** targeting **SharePoint** repositories.  
+8. Identified possible exfiltration methods using **external and multi-hop proxies**.  
+9. Successfully “evicted” the threat before it could complete data exfiltration.  
+
+### 🖼️ Screenshots
+![MITRE ATT&CK Mapping](assets/images/eviction-attack-navigator.png)  
+![Eviction Badge](assets/images/eviction-badge.png)  
+
+### ✅ What I Learned
+- How to use the **MITRE ATT&CK framework** to track adversary behavior.  
+- Practical detection of persistence, execution, and lateral movement techniques.  
+- The value of structured defense frameworks in incident response.  
+- Reinforced the role of a SOC analyst in stopping real-world APTs.  
+
+---
 ## 📢 Let's Connect
 - [GitHub](https://github.com/davidhnna)
 - [LinkedIn](https://linkedin.com/in/david-hanna-a73756304/)
